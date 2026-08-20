@@ -2,6 +2,12 @@ import { useEffect, useState } from "react";
 import "./Navbar.css";
  
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+ 
+const toggleMenu = () => {
+  setMenuOpen(!menuOpen);
+};
+ 
  
   // Theme state
   const [theme, setTheme] = useState(
@@ -45,7 +51,8 @@ function Navbar() {
  
  
         {/* Navigation links */}
-        <ul className="nav-links">
+        <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
+ 
  
           <li>
             <a href="#about">
@@ -86,11 +93,12 @@ function Navbar() {
  
         {/* Mobile menu */}
         <button
-          className="menu-toggle"
-          aria-label="Toggle navigation"
-        >
-          ≡
-        </button>
+  className="menu-toggle"
+  onClick={toggleMenu}
+  aria-label="Toggle navigation"
+>
+  {menuOpen ? "✕" : "☰"}
+</button>
  
       </nav>
  
