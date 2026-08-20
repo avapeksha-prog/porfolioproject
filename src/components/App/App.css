@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #1b0776;
+  --accent: #b60909;
+  --text: #000408;
+  --light: #599de1;
+  --white: #fcfcfc;
+
+  --font-main:
+    "Segoe UI",
+    Tahoma,
+    Geneva,
+    Verdana,
+    sans-serif;
+}
+
+body {
+  font-family: var(--font-main);
+
+  color: var(--text);
+
+  line-height: 1.6;
+
+  background-color: var(--white);
+
+  transition: all 0.3s ease;
+}
+
+.app {
+  min-height: 100vh;
+
+  background-color: var(--white);
+
+  color: var(--text);
+
+  transition: all 0.3s ease;
+}
+
+.app.dark {
+  background-color: rgb(2, 0, 0);
+
+  color: white;
+}
+
+.app.dark .about-section,
+.app.dark .skills-section,
+.app.dark .project-section {
+  color: white;
+}
+
+section h2 {
+  font-size: 2.2rem;
+
+  text-align: center;
+
+  position: relative;
+
+  margin-bottom: 50px;
+}
+
+section h2::after {
+  content: "";
+
+  display: block;
+
+  width: 0;
+
+  height: 4px;
+
+  background-color: #720505;
+
+  margin: 12px auto 0;
+
+  border-radius: 20px;
+}
+
+body,
+.site-header,
+.hero-section,
+.skill-item,
+.project-card,
+.contact-section,
+.site-footer,
+input,
+textarea,
+.btn,
+a {
+  transition: all 0.3s ease;
+}
