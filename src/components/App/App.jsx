@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Project from "./components/Project";
@@ -9,6 +8,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 import "./App.css";
+import Hero from "../Hero/Hero";
 
 function App() {
 
