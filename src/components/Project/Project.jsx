@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./project.css";
+import "./Project.css";
 
 function Project() {
 
